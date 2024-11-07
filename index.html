@@ -1,152 +1,34 @@
 <!DOCTYPE html>
-<!-- Hello World -->
+<html lang="en">
 <head>
-    
-    <title>About Me</title>
-
-    <style>
-        body {
-            font-family: 'Arial', sans-serif; 
-            background-color: #4E2A84; 
-            padding: 20px;
-            opacity: 2.5; 
-        }
-
-        h1, h2 {
-            color: #ecf0f1; 
-            text-align: center; 
-        }
-
-        a {
-            color: #2980b9;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-            color: #3498db;
-        }
-
-        .container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-
-        .section {
-            background-color: #ecf0f1; 
-            width: 30%;
-            padding: 15px; 
-            margin: 20px; 
-            border: 2px solid #bdc3c7; 
-            border-radius: 10px;
-            transition: opacity 0.3s;
-        }
-
-        .section:hover {
-            opacity: 0.9; 
-        }
-
-        .section-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .tooltip {
-            position: relative;
-            display: inline-block;
-            left: 45%;
-            top: -5px;
-        }
-
-        .tooltip .tooltiptext {
-            visibility: hidden;
-            width: 140px;
-            background-color: #555;
-            color: #fff;
-            text-align: center;
-            border-radius: 5px;
-            padding: 5px;
-            position: absolute;
-            z-index: 2;
-            bottom: 125%;
-            left: 50%;
-            margin-left: -70px;
-            transition: opacity 0.3s;
-        }
-
-        .tooltip:hover .tooltiptext {
-            visibility: visible;
-            opacity: 1;
-        }
-
-        @keyframes slideIn {
-            from {
-                margin-left: 100%;
-                width: 300%;
-            }
-            to {
-                margin-left: 0;
-                width: 100%;
-            }
-        }
-
-        .animated-intro {
-            animation: slideIn 4s; 
-        }
-
-        .overflow-box {
-            width: 300px;
-            height: 100px;
-            overflow: scroll;
-            background-color: lightgray;
-            margin-left: 40%;
-        }
-
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jack Pasacreta's Personal Portfolio">
+    <title>Jack Pasacreta's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <h1>Jack Pasacreta's Portfolio</h1>
+        <p>Northwestern University | Medill School of Journalism & Bienen School of Music</p>
+    </header>
 
-    <h1 class="animated-intro">Welcome to My About Me Page</h1>
+    <nav>
+        <ul>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="experience.html">Experience</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-    <div style="background-color: #fcfbfd; padding: 10px; margin: 10px; color: #4E2A84;">
-        Hi, I'm Jack! I'm passionate about combining my interests in journalism and music with a love for technology and analysis.
-    </div>
+    <footer>
+        <p>&copy; 2024 Jack Pasacreta</p>
+        <p><a href="https://www.linkedin.com/in/jackpasacreta">LinkedIn</a></p>
+    </footer>
 
-    <h2>Education and Achievements</h2>
-    <div class="container">
-        <div class="section">
-            <div class="section-content">
-                <h3>Northwestern University</h3>
-                <p>Dual Degree Candidate at Medill School of Journalism and Bienen School of Music</p>
-                <a href="https://www.northwestern.edu" target="_blank">Northwestern University</a>
-            </div>
-        </div>
-
-        <div class="section">
-            <div class="section-content">
-                <h3>Honors & Awards</h3>
-                <p>Dean's List and Morris Arts' Ehlers Arts Scholarship Recipient.</p>
-            </div>
-        </div>
-    </div>
-
-    <h2>Fun Facts</h2>
-    <div class="fun-facts-container">
-        <div class="tooltip">
-            <p> Factoids</p>
-            <span class="tooltiptext">I love playing the electric guitar and yo-yoing!</span>
-          </div>
-    </div>
-
-    <h2>Additional Information</h2>
-    <div class="overflow-box">
-        I have experience in journalism, music, research, and AI development. My journey blends creativity with technical expertise. I plan on continuing my education by attending Law School.
-    </div>
-    <img src="https://media.giphy.com/media/3oKIPBe4bfkwO3On5e/giphy.gif?cid=790b7611oi0p7bkyd8oap3hn55ke7komcus2lnblm0r6nbnp&ep=v1_gifs_search&rid=giphy.gif&ct=g" style="width:48px;height:48px;">
-    <!-- Hello -->
-
+    <script>
+        console.log("Welcome to Jack Pasacreta's Portfolio!");
+    </script>
 </body>
 </html>
