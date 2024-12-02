@@ -17,6 +17,7 @@
     <meta name="twitter:description" content="An amazing image shared for everyone to enjoy.">
     <meta name="twitter:description" content="Pasacreta Profile">
 
+    <!-- styles for the Java Script-->
     <style>
         nav div {
             display: flex;
@@ -28,13 +29,107 @@
             max-width: 100%;
             height: auto;
         }
-    </style>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            console.log("Welcome to Jack Pasacreta's Portfolio!");
-        });
-    </script>
+        .dynamic-message {
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #e8f5e9;
+            border: 1px solid #4caf50;
+            border-radius: 8px;
+            color: #2e7d32;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+
+        .btn {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <!-- styles for the rest of the page -->
+<style>
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    
+    header {
+        text-align: center;
+        padding: 20px;
+        background-color: #ddd;
+    }
+    
+    header h1 {
+        font-size: 2.5em;
+        color: #333;
+    }
+    
+    header p {
+        font-size: 1.2em;
+        color: #666;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        background: #333;
+        padding: 10px;
+    }
+    
+    nav ul li {
+        margin: 0 15px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+    
+    section {
+        padding: 40px 20px;
+        margin-bottom: 20px;
+        background: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    section#about {
+        background-color: #f9f9f9;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #ddd;
+    }
+    
+    footer p, footer a {
+        font-size: 0.9em;
+        color: #333;
+    }
+    </style>
 </head>
 <body>
     <header>
@@ -55,84 +150,39 @@
         </div>
     </nav>
 
+   <!-- Java Section-->
+    <section>
+        <button class="btn" id="showMessageBtn">Click Me for Inspiration</button>
+        <div id="dynamicMessage" class="dynamic-message"></div>
+    </section>
+<!-- active linkedin link-->
     <footer>
         <p>&copy; 2024 Jack Pasacreta</p>
         <p><a href="https://www.linkedin.com/in/jack-pasacreta-373b9a284/">LinkedIn</a></p>
-        </footer>
-        <style>
-            {
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            
-            body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                background-color: #f4f4f4;
-                color: #333;
-            }
-            
-            header {
-                text-align: center;
-                padding: 20px;
-                background-color: #ddd;
-            }
-            
-            header h1 {
-                font-size: 2.5em;
-                color: #333;
-            }
-            
-            header p {
-                font-size: 1.2em;
-                color: #666;
-            }
-            
-            nav ul {
-                display: flex;
-                justify-content: center;
-                list-style: none;
-                background: #333;
-                padding: 10px;
-            }
-            
-            nav ul li {
-                margin: 0 15px;
-            }
-            
-            nav ul li a {
-                text-decoration: none;
-                color: #fff;
-                font-weight: bold;
-            }
-            
-            section {
-                padding: 40px 20px;
-                margin-bottom: 20px;
-                background: #fff;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            }
-            
-            section#about {
-                background-color: #f9f9f9;
-            }
-            
-            footer {
-                text-align: center;
-                padding: 20px;
-                background-color: #ddd;
-            }
-            
-            footer p, footer a {
-                font-size: 0.9em;
-                color: #333;
-            }
-            </style>
-           
+    </footer>
+
+    <script>
+       // Java Script with help from ChatGPT 2pts
+        document.getElementById("showMessageBtn").addEventListener("click", function() {
+            const messages = [
+                "Believe you can and you're halfway there!",
+                "The only way to do great work is to love what you do.",
+                "Success is not the key to happiness. Happiness is the key to success.",
+                "Don’t watch the clock; do what it does. Keep going.",
+                "Your limitation—it's only your imagination."
+            ];
+
+            const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+
+            const messageDiv = document.getElementById("dynamicMessage");
+            messageDiv.textContent = randomMessage;
+            messageDiv.style.display = "block";
+        });
+    </script>
+
 </body>
 </html>
+
 
 
 
